@@ -11,7 +11,7 @@ if (!is.element("GGally", installed.packages()[, 1])) {
 if (!is.element("dplyr", installed.packages()[, 1])) {
   install.packages("dplyr", dependencies = TRUE)
 }
-if (!is.element("reshape2", installed.packages()[, 1])) {
+if (!is.element("reshape2", installed.packages()[, 1])) { 
   install.packages("reshape2", dependencies = TRUE)
 }
 

@@ -10,7 +10,7 @@ output:
     fig_height: 4
     df_print: default
 editor_options:
-  chunk_output_type: console
+  chunk_output_type: console 
 ---
 
 # MY Details
