@@ -1,5 +1,10 @@
 # Nick's portfolio
- Highlights previous works and skills for employers review
- The portfolio.html is a file that highlights my studies and skills learnt through my educational journey.
- The data analysis highlights is a collection of rmd's that describe the stages of data analysis along with a data analysis model for prediction and accuracy indicators. Ignore the warnings highlighted in the data_analysis_breakdown .md file the final visualizations are at the end of the second chunk.
- Thanks for viewing this article and hope you'll be with me as I begin my development journey
+ Welcome to my professional portfolio. This document serves as a comprehensive overview of my academic journey and the skills I have acquired along the way.
+
+Data Analysis Highlights
+
+Contained within this portfolio is a series of R Markdown files (.rmd) that meticulously outline the various stages of data analysis. These documents include a detailed data analysis model that focuses on prediction and accuracy indicators. Please note that any warnings highlighted in the data_analysis_breakdown.md file can be disregarded, as the final visualizations are presented at the end of the second chunk.
+
+Thank you for taking the time to review my portfolio. I look forward to embarking on my development journey with your esteemed organization.
+
+
