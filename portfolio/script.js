@@ -1,8 +1,6 @@
 $(document).ready(function () {
 
-    /* ============================================================
-       1. STICKY NAVBAR + SCROLL-UP BUTTON
-    ============================================================ */
+    
     $(window).scroll(function () {
         if (this.scrollY > 20) {
             $('.navbar').addClass("sticky");
@@ -23,17 +21,13 @@ $(document).ready(function () {
         revealOnScroll();
     });
 
-    /* ============================================================
-       2. SCROLL-UP BUTTON
-    ============================================================ */
+  
     $('.scroll-up-btn').click(function () {
         $('html').animate({ scrollTop: 0 }, 600);
         $('html').css("scrollBehavior", "auto");
     });
 
-    /* ============================================================
-       3. SMOOTH NAV + CLOSE MOBILE MENU ON LINK CLICK
-    ============================================================ */
+  
     $('.navbar .menu li a').click(function () {
         $('html').css("scrollBehavior", "smooth");
         // Close mobile menu when a link is clicked
@@ -41,18 +35,13 @@ $(document).ready(function () {
         $('.menu-btn i').removeClass("active");
     });
 
-    /* ============================================================
-       4. TOGGLE MOBILE MENU
-    ============================================================ */
+ 
     $('.menu-btn').click(function () {
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
 
-    /* ============================================================
-       5. TYPING ANIMATION — updated strings from CV
-    ============================================================ */
-    var typed = new Typed(".typing", {
+
         strings: ["Web Developer", "Data Analyst", "IT Support Specialist", "AI Enthusiast", "Business Intelligence Analyst"],
         typeSpeed: 90,
         backSpeed: 55,
@@ -68,9 +57,7 @@ $(document).ready(function () {
         loop: true
     });
 
-    /* ============================================================
-       6. OWL CAROUSEL
-    ============================================================ */
+ 
     $('.carousel').owlCarousel({
         margin: 20,
         loop: true,
@@ -84,9 +71,7 @@ $(document).ready(function () {
         }
     });
 
-    /* ============================================================
-       7. SKILL BARS — animate width on scroll into view
-    ============================================================ */
+    
     var skillsAnimated = false;
 
     function animateSkillBars() {
@@ -167,10 +152,7 @@ $(document).ready(function () {
     $(window).scroll(animateSkillBarsV2);
     animateSkillBarsV2(); // run once on load in case already visible
 
-    /* ============================================================
-       8. SCROLL REVEAL — fade + slide up sections on enter
-    ============================================================ */
-    // Add base hidden state to key sections
+
     $('section').not('.home').css({
         opacity: 0,
         transform: 'translateY(40px)',
@@ -189,9 +171,7 @@ $(document).ready(function () {
 
     revealOnScroll(); // run once on load
 
-    /* ============================================================
-       9. ACTIVE NAV LINK — highlight based on scroll position
-    ============================================================ */
+
     $(window).scroll(function () {
         var scrollPos = $(window).scrollTop() + 80;
         $('.navbar .menu li a').each(function () {
@@ -209,9 +189,6 @@ $(document).ready(function () {
         });
     });
 
-    /* ============================================================
-       10. PARALLAX MOUSE EFFECT on home section
-    ============================================================ */
     $('.home').on('mousemove', function (e) {
         var offsetX = (e.clientX / $(window).width() - 0.5) * 18;
         var offsetY = (e.clientY / $(window).height() - 0.5) * 10;
@@ -223,17 +200,12 @@ $(document).ready(function () {
         $(this).css('background-position', 'center center');
     });
 
-    /* ============================================================
-       11. FLOATING TAGS — randomise subtle start positions
-    ============================================================ */
+
     $('.img-tag').each(function (i) {
         var delay = i * 0.8;
         $(this).css('animation-delay', delay + 's');
     });
 
-    /* ============================================================
-       12. SERVICE CARD — tilt effect on hover
-    ============================================================ */
     $('.services .card').on('mousemove', function (e) {
         var card   = $(this);
         var offset = card.offset();
@@ -247,9 +219,7 @@ $(document).ready(function () {
         $(this).css('transition', 'transform 0.5s ease');
     });
 
-    /* ============================================================
-       13. TYPED CURSOR COLOUR
-    ============================================================ */
+   
     setTimeout(function () {
         $('.typed-cursor').css('color', 'rgb(20, 147, 220)');
     }, 300);
