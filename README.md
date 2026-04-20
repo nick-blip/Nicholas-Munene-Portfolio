@@ -31,19 +31,49 @@ This portfolio contains a series of R Markdown files (`.rmd`) documenting end-to
 
 ---
 
+### AcadPredict — Academic Achievement Prediction System
+**Context:** Independent Research Project
+
+**Problem:** Academic institutions often lack the tools to identify at-risk students early enough to intervene effectively. Grade outcomes and dropout risks are typically assessed reactively, long after the warning signs have emerged.
+
+**Approach:** Built a full-stack machine learning application that predicts student academic outcomes across four dimensions — pass/fail status, at-risk/dropout likelihood, grade classification (A–F), and GPA — using an ensemble of **Random Forest** and **Gradient Boosting** models trained on a rich set of behavioural, academic, and socioeconomic features. The system is powered by a **Python** backend with a **React** frontend and is fully containerised via **Docker** for ease of deployment.
+
+**Model Performance** *(validated on 2,000 synthetic students)*
+
+| Prediction Target | Algorithm | Performance |
+|---|---|---|
+| Pass / Fail | Random Forest | 96.5% Accuracy |
+| At-Risk / Dropout | Random Forest | 99.7% Accuracy |
+| Grade Classification (A–F) | Gradient Boosting | 82.7% Accuracy |
+| GPA Prediction | Gradient Boosting | R² 0.86 |
+
+**Key Features:**
+- Four simultaneous prediction models covering distinct academic outcome dimensions
+- Single-student and batch CSV prediction modes with downloadable results
+- Interactive admin dashboard with confusion matrices, feature importance charts, and grade distribution visualisations
+- Dynamic model retraining pipeline — institutions can upload real student data and retrain models via a single API call
+- Full REST API with interactive documentation, containerised for one-command deployment
+
+**Outcome:** Delivered a production-ready tool that empowers academic institutions to shift from reactive intervention to proactive student support, with model accuracy exceeding 96% on key risk indicators.
+
+---
+
 *More projects coming soon.*
 
 ---
 
 ## Skills & Tools
 
-| Category        | Technologies                              |
-|----------------|-------------------------------------------|
-| Languages       | Python, JavaScript (Node.js), R           |
-| NLP & ML        | NLP libraries (spaCy / NLTK), Predictive Modelling |
-| Data Analysis   | R Markdown, Statistical Modelling, Data Visualisation |
-| Backend         | Node.js, REST APIs                        |
-| Other           | Knowledge Base Design, Admin Dashboards   |
+| Category        | Technologies                                                  |
+|----------------|---------------------------------------------------------------|
+| Languages       | Python, JavaScript (Node.js, React), R                        |
+| Machine Learning | Random Forest, Gradient Boosting, Scikit-learn               |
+| NLP             | NLP libraries (spaCy / NLTK)                                  |
+| Data Analysis   | R Markdown, Statistical Modelling, Data Visualisation         |
+| Backend         | Python (FastAPI / Flask), Node.js, REST APIs                  |
+| Frontend        | React, Vite                                                   |
+| DevOps          | Docker, Docker Compose                                        |
+| Other           | Knowledge Base Design, Admin Dashboards, Batch Processing     |
 
 ---
 
