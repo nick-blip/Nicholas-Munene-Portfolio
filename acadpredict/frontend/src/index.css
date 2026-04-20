@@ -1,0 +1,64 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #f5f5f3;
+  --surface: #ffffff;
+  --surface2: #f0f0ee;
+  --border: rgba(0,0,0,0.09);
+  --border2: rgba(0,0,0,0.16);
+  --text: #1a1a18;
+  --text2: #5c5c58;
+  --text3: #9a9a96;
+  --blue: #185FA5; --blue-bg: #E6F1FB; --blue-text: #185FA5;
+  --green: #3B6D11; --green-bg: #EAF3DE; --green-text: #3B6D11;
+  --red: #A32D2D; --red-bg: #FCEBEB; --red-text: #A32D2D;
+  --amber: #BA7517; --amber-bg: #FAEEDA; --amber-text: #BA7517;
+  --purple: #534AB7; --purple-bg: #EEEDFE; --purple-text: #534AB7;
+  --teal: #0F6E56; --teal-bg: #E1F5EE; --teal-text: #0F6E56;
+  --radius: 10px; --radius-sm: 6px;
+}
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); font-size: 15px; line-height: 1.6; }
+button, input, select, textarea { font-family: inherit; }
+.btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: var(--radius-sm); border: 0.5px solid var(--border2); background: transparent; color: var(--text); font-size: 14px; font-weight: 500; cursor: pointer; transition: background 0.15s; }
+.btn:hover { background: var(--surface2); }
+.btn-primary { background: var(--text); color: #fff; border-color: var(--text); }
+.btn-primary:hover { background: #333; }
+.btn-success { background: var(--green); color: #fff; border-color: var(--green); }
+.btn-success:hover { background: #2d5509; }
+.btn-danger { color: var(--red-text); border-color: rgba(163,45,45,0.25); }
+.btn-danger:hover { background: var(--red-bg); }
+.btn-sm { padding: 5px 12px; font-size: 13px; }
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.card { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--radius); padding: 1.25rem; }
+.input { width: 100%; border: 0.5px solid var(--border2); border-radius: var(--radius-sm); padding: 8px 11px; background: var(--surface); color: var(--text); font-size: 14px; transition: border-color 0.15s; }
+.input:focus { outline: none; border-color: var(--text); }
+select.input { cursor: pointer; }
+.tag { display: inline-block; font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 20px; }
+.tag-pass { background: var(--green-bg); color: var(--green-text); }
+.tag-fail { background: var(--red-bg); color: var(--red-text); }
+.tag-risk { background: var(--amber-bg); color: var(--amber-text); }
+.tag-ok { background: var(--teal-bg); color: var(--teal-text); }
+.tag-a { background: var(--green-bg); color: var(--green-text); }
+.tag-b { background: var(--blue-bg); color: var(--blue-text); }
+.tag-c { background: var(--amber-bg); color: var(--amber-text); }
+.tag-d { background: var(--surface2); color: var(--text2); }
+.tag-f { background: var(--red-bg); color: var(--red-text); }
+.metric-card { background: var(--surface2); border-radius: var(--radius-sm); padding: 1rem; }
+.metric-label { font-size: 12px; color: var(--text2); margin-bottom: 4px; }
+.metric-value { font-size: 24px; font-weight: 500; }
+.section-title { font-size: 17px; font-weight: 500; margin-bottom: 4px; }
+.section-sub { font-size: 13px; color: var(--text2); margin-bottom: 1.25rem; }
+.form-label { font-size: 12px; color: var(--text2); display: block; margin-bottom: 4px; }
+.form-group { display: flex; flex-direction: column; gap: 4px; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+@media (max-width: 700px) { .grid-2,.grid-3,.grid-4 { grid-template-columns: 1fr; } }
+.bar-track { background: var(--surface2); border-radius: 4px; height: 10px; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 4px; transition: width 0.5s; }
+.spinner { width: 18px; height: 18px; border: 2px solid var(--border2); border-top-color: var(--text); border-radius: 50%; animation: spin 0.7s linear infinite; display: inline-block; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.alert { padding: 10px 14px; border-radius: var(--radius-sm); font-size: 13px; margin-bottom: 12px; }
+.alert-error { background: var(--red-bg); color: var(--red-text); }
+.alert-success { background: var(--green-bg); color: var(--green-text); }
+.alert-info { background: var(--blue-bg); color: var(--blue-text); }
+.confidence-ring { display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 64px; border-radius: 50%; font-size: 14px; font-weight: 500; border: 3px solid; }

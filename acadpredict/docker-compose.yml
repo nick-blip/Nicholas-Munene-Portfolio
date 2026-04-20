@@ -1,0 +1,27 @@
+version: '3.9'
+services:
+  backend:
+    build: ./backend
+    container_name: acadpredict_backend
+    environment:
+      - JWT_SECRET=${JWT_SECRET:-acadpredict-secret-change-me}
+      - ADMIN_USER=${ADMIN_USER:-admin}
+      - ADMIN_PASS=${ADMIN_PASS:-admin123}
+      - DB_PATH=/data/acadpredict.db
+    volumes:
+      - acadpredict_data:/data
+      - acadpredict_models:/app/saved_models
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+  frontend:
+    build: ./frontend
+    container_name: acadpredict_frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+volumes:
+  acadpredict_data:
+  acadpredict_models:

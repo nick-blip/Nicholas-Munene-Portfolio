@@ -1,0 +1,193 @@
+{
+  "pass_fail": {
+    "accuracy": 0.965,
+    "report": {
+      "0": {
+        "precision": 0.5333333333333333,
+        "recall": 0.5333333333333333,
+        "f1-score": 0.5333333333333333,
+        "support": 15.0
+      },
+      "1": {
+        "precision": 0.9818181818181818,
+        "recall": 0.9818181818181818,
+        "f1-score": 0.9818181818181818,
+        "support": 385.0
+      },
+      "accuracy": 0.965,
+      "macro avg": {
+        "precision": 0.7575757575757576,
+        "recall": 0.7575757575757576,
+        "f1-score": 0.7575757575757576,
+        "support": 400.0
+      },
+      "weighted avg": {
+        "precision": 0.965,
+        "recall": 0.965,
+        "f1-score": 0.965,
+        "support": 400.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        8,
+        7
+      ],
+      [
+        7,
+        378
+      ]
+    ],
+    "train_size": 1600,
+    "test_size": 400
+  },
+  "grade": {
+    "accuracy": 0.8275,
+    "report": {
+      "A": {
+        "precision": 0.8,
+        "recall": 0.2857142857142857,
+        "f1-score": 0.42105263157894735,
+        "support": 14.0
+      },
+      "B": {
+        "precision": 0.8301886792452831,
+        "recall": 0.8048780487804879,
+        "f1-score": 0.8173374613003096,
+        "support": 164.0
+      },
+      "C": {
+        "precision": 0.8401826484018264,
+        "recall": 0.8888888888888888,
+        "f1-score": 0.863849765258216,
+        "support": 207.0
+      },
+      "D": {
+        "precision": 0.6470588235294118,
+        "recall": 0.7333333333333333,
+        "f1-score": 0.6875,
+        "support": 15.0
+      },
+      "accuracy": 0.8275,
+      "macro avg": {
+        "precision": 0.7793575377941303,
+        "recall": 0.678203639179249,
+        "f1-score": 0.6974349645343683,
+        "support": 400.0
+      },
+      "weighted avg": {
+        "precision": 0.8274365849208641,
+        "recall": 0.8275,
+        "f1-score": 0.8226687047595169,
+        "support": 400.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        4,
+        10,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        132,
+        31,
+        0,
+        0
+      ],
+      [
+        0,
+        17,
+        184,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        11,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "labels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "F"
+    ],
+    "train_size": 1600,
+    "test_size": 400
+  },
+  "gpa": {
+    "mae": 0.144,
+    "r2": 0.8611,
+    "train_size": 1600,
+    "test_size": 400
+  },
+  "at_risk": {
+    "accuracy": 0.9975,
+    "report": {
+      "0": {
+        "precision": 0.9975,
+        "recall": 1.0,
+        "f1-score": 0.9987484355444305,
+        "support": 399.0
+      },
+      "1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 1.0
+      },
+      "accuracy": 0.9975,
+      "macro avg": {
+        "precision": 0.49875,
+        "recall": 0.5,
+        "f1-score": 0.49937421777221525,
+        "support": 400.0
+      },
+      "weighted avg": {
+        "precision": 0.99500625,
+        "recall": 0.9975,
+        "f1-score": 0.9962515644555694,
+        "support": 400.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        399,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "train_size": 1600,
+    "test_size": 400
+  },
+  "feature_importance": {
+    "attendance_rate": 0.0318,
+    "missed_classes": 0.0241,
+    "assignment_avg": 0.1351,
+    "test_avg": 0.11,
+    "prior_gpa": 0.3119,
+    "sei": 0.1477,
+    "scholarship": 0.0197,
+    "part_time_hours": 0.0099,
+    "teacher_score": 0.2007,
+    "participation": 0.0091
+  },
+  "training_samples": 2000
+}
